@@ -1,0 +1,17 @@
+import Personas.*
+
+test "Ramiro tiene la piel grasosa al volver del trabajo" {
+	ramiro.diaDeTrabajo()
+	assert.that(ramiro.tieneLaPielGrasosa())
+	
+}
+
+test "Ramiro no tiene la piel grasosa luego de tomar un baño de vapor" {
+	ramiro.tomarBanioDeVapor()
+	assert.notThat(ramiro.tieneLaPielGrasosa())
+	
+}
+
+test "Olivia no tiene un grado de concentración inicial igual a 8"{
+	assert.notEquals(8,olivia.gradoDeConsentracion())
+}
